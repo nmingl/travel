@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Poppins: 'Poppins', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+    --primary-color: #3685fb;
+    --primary-color-dark: #2f73d9;
+    --secondary-color: #fafcff;
+    --text-dark: #0d213f;
+    --text-light: #767268;
+    --extra-light: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--Poppins);
+}
+
+body {
+    line-height: 1.4;
+    color: var(--dark);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navbar {
+    background: #9dadbc;
+    padding: 1rem 0; 
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Poppins);
+    letter-spacing: 1px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav a {
+    text-transform: uppercase;
+    font-family: var(--Poppins);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    background-color: #85929e;
+}
+
+
+
+
+/* about */
+.about {
+    padding: 4.5rem 0;
+}
+
+.about-text {
+    margin: 2rem 0;
+}
+.about-text .title {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+.about-text .subtitle {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    padding-top: 2rem;
+}
+.about-text > p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    text-align:justify ;
+}
+.about-content img {
+    max-width: 80%;
+    height: auto;
+}
+#about .fas.fa-star {
+    color: rgba(246, 230, 6, 0.859); 
+}
+
+.comment-content {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+.comment-content h2{
+    padding-top: 1rem;
+    padding-left: 0.2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1rem;
+    width: calc(100% - 60px);
+    outline: 0;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-indent: 20px;
+}
+.search-input::placeholder{
+    padding: 0.1rem;
+}
+.send-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.review-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.review-container > p:nth-child(1){
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.review-container > p:nth-child(2){
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: justify; 
+}
+.review-container img {
+    width: 135px; 
+    height: 150px; 
+    display: block;
+    margin-top: 10px; 
+}
+
+/* footer */
+footer {
+    background:#9dadbc;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+
+.social-links a {
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+    background: #fff;
+    color: var(--exDark);
+}
+
+.footer span {
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Wonders Section */
+.wonders {
+  padding: 3rem 0;
+}
+
+.wonders h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--text-dark);
+}
+
+.wonder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.wonder-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.wonder-card:hover {
+  transform: translateY(-5px);
+}
+
+.wonder-card img {
+  width: 100%;
+  height: 640px;       
+  max-width: 640px;    
+  object-fit: cover;   
+  border-radius: 8px;
+  margin: 0 auto 1rem; 
+  display: block;
+}
+
+.wonder-card h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.wonder-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+.wonder-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.wonder-card li {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+.wonder-card .rating {
+  display: block;
+  color: #f6d00f; /* Gold stars */
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.wonder-card .rating i {
+  margin-right: 2px;
+}
+
+.wonder-card .price {
+  display: block;
+  color: var(--primary-color-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px) {
+    .navbar-nav a {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .banner-title {
+        font-size: 5rem;
+    }
+
+    .banner form {
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search-input {
+        padding: 0.8rem 0;
+    }
+
+    .festival-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .design-item {
+        margin: 1.5rem 0;
+        grid-column: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .design-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

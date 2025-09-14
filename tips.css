@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Poppins: 'Poppins', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+    --primary-color: #3685fb;
+    --primary-color-dark: #2f73d9;
+    --secondary-color: #fafcff;
+    --text-dark: #0d213f;
+    --text-light: #767268;
+    --extra-light: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--Poppins);
+}
+
+body {
+    line-height: 1.4;
+    color: var(--dark);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navbar {
+    background: #9dadbc;
+    padding: 1rem 0; 
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Poppins);
+    letter-spacing: 1px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav a {
+    text-transform: uppercase;
+    font-family: var(--Poppins);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    background-color: #85929e;
+}
+
+.banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-title {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-family: var(--Poppins);
+    line-height: 1.2;
+    color: #bdddfb;
+}
+
+.banner-title span {
+    position: relative;
+    z-index: 2; 
+    font-family: var(--Poppins);
+    color: #f0dbe8;
+}
+
+.banner p {
+    position: relative;
+    z-index: 2; 
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+    text-align: justify;
+}
+
+.banner form {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tips {
+    padding: 4.5rem 0;
+    background: var(--secondary-color);
+}
+
+.tips h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: var(--Poppins);
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.tip-card {
+    background: var(--extra-light);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.tip-card i {
+    font-size: 3rem;
+    color: #5b93c8;
+    margin-bottom: 1rem;
+}
+
+.tip-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark);
+    font-family: var(--Poppins);
+}
+
+.tip-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    font-family: var(--Roboto);
+}
+
+
+/* footer */
+footer {
+    background: #9dadbc;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+
+.social-links a {
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+    background: #fff;
+    color: var(--exDark);
+}
+
+.footer span {
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+/* Responsive adjustments for tips */
+@media screen and (max-width: 768px) {
+    .tips h2 {
+        font-size: 2rem;
+    }
+    .tip-card {
+        padding: 1.5rem 1rem;
+    }
+    .tip-card i {
+        font-size: 2.5rem;
+    }
+}/* Responsive adjustments for tips */
+@media screen and (max-width: 768px) {
+    .tips h2 {
+        font-size: 2rem;
+    }
+    .tip-card {
+        padding: 1.5rem 1rem;
+    }
+    .tip-card i {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width: 540px) {
+    .navbar-nav a {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .banner-title {
+        font-size: 5rem;
+    }
+
+    .banner form {
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search-input {
+        padding: 0.8rem 0;
+    }
+
+    .festival-content {
+        grid-template-columns: repeat(2, 1fr); /* Show 3 columns */
+    }
+    .design-item {
+        margin: 1.5rem 0;
+        grid-column: auto; /* Reset grid-column */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .design-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
